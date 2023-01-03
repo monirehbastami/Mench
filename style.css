@@ -1,0 +1,143 @@
+body{
+    background-color: #1a575a;
+}
+header{
+    text-align: center;
+    margin: 0px;
+    /* border: 3px solid #73AD21; */
+    padding-top: 2rem;
+    display: inline-block;
+    width: 100%;
+    font-size: 3rem;
+    color:#c6ffef
+}
+.winer::after{
+    font-size: 4rem;
+    content: "Let's Play";
+}
+.container{
+    width:80%;
+    height:85%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: #185053;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: space-between;
+}
+.item1{
+    flex:1 1 50%;
+}
+section{
+    text-align: center;
+    padding:4%;
+}
+.gid-player1{
+    display: inline-grid;
+    grid-template-columns: repeat(3, 60px);
+    grid-template-rows:repeat(3, 60px);
+    text-align: center;
+    border:1px solid #000;
+    box-shadow: 0 0 0 1px #333333;
+    border-radius: 15px;
+    background-image: radial-gradient(farthest-corner at 50% 50%, rgb(255, 255, 255) 20%, rgb(182, 182, 182) 100%,rgb(255, 255, 255) 100%);
+}
+.cell-p1::after{
+    content: "\2022";
+    font-size: 7rem;
+    color:#114143
+}
+.cell-p1 {
+    border: none !important;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gid-player2{
+    display: inline-grid;
+    grid-template-columns: repeat(3, 60px);
+    grid-template-rows:repeat(3, 60px);
+    text-align: center;
+    border:1px solid #000;
+    box-shadow: 0 0 0 1px #333333;
+    border-radius: 15px;
+    background-image: radial-gradient(farthest-corner at 50% 50%, rgb(255, 255, 255) 20%, rgb(182, 182, 182) 100%,rgb(255, 255, 255) 100%);
+
+}
+.cell-p2::after{
+    content: "\2022";
+    font-size: 7rem;
+    color:#114143
+}
+.cell-p2 {
+    border: none !important;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttons-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    height:30%;
+    gap:12%
+}
+
+.btn{
+    padding:23px 60px;
+    font-size: 1.5rem;
+}
+.btn .light-blue{
+    background-color: #0de1b6 !important;
+}
+.hidden{
+    content-visibility: hidden;
+}
+.show{
+    content-visibility: visible;
+}
+@media only screen and (max-width: 400px){
+    header{
+        font-size: 2.5rem;
+    }
+    .container{
+        height:50% !important;
+        width:80% !important;
+    }
+    section{
+        padding: 20% 0 20% 0 !important;
+    }
+    .buttons-div{
+        height:17%;
+        padding-top: 5%;
+    }
+    .btn{
+        padding: 12px 30px;
+    }
+    .gid-player1{
+        grid-template-columns: repeat(3, 30px) !important;
+        grid-template-rows: repeat(3, 30px) !important;
+    }
+    .gid-player2{
+        grid-template-columns: repeat(3, 30px) !important;
+        grid-template-rows: repeat(3, 30px) !important;
+    }
+}
+@media only screen and (max-width: 700px){
+    .container{
+        height:85% !important;
+    }
+}
