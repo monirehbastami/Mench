@@ -15,6 +15,9 @@ header{
     font-size: 4rem;
     content: "Let's Play";
 }
+.winer.no-after::after{
+    content: "";
+}
 .container{
     width:80%;
     height:85%;
@@ -103,11 +106,17 @@ section{
 .btn .light-blue{
     background-color: #0de1b6 !important;
 }
+#play{
+    background-color: #0de1b6;
+}
 .hidden{
     content-visibility: hidden;
 }
 .show{
     content-visibility: visible;
+}
+.hid{
+    display: none;
 }
 @media only screen and (max-width: 400px){
     header{
